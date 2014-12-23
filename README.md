@@ -10,6 +10,7 @@ How to use it?
 Just extend the database class
 
 Example:
-  Class Example extends Database {
+
+  Class User extends Database {}
   
-  }
+  
