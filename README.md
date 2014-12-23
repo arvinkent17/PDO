@@ -12,11 +12,16 @@ Just extend the database class
 Example:
 
   Class User extends Database {
-    
+  
     public function addUser($username, $password) {
-      
+    
       $this->executeMySQL("INSERT into User (username, password) VALUES (?, ?)", array($username, $password));
       
+      if ($this->isInserted()) {
+      
+        return true;
+        
+      }  
     }
     
   }
@@ -25,5 +30,10 @@ Example:
   
   $insertData = $user->addUser("TEST", "TEST");
   
+  if ($insertData) {
   
+    echo "successfully added user";
+    
+  }
   
+  Note: You can use any query and pass values on the method executeMySQL
