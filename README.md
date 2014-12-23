@@ -11,6 +11,19 @@ Just extend the database class
 
 Example:
 
-  Class User extends Database {}
+  Class User extends Database {
+    
+    public function addUser($username, $password) {
+      
+      $this->executeMySQL("INSERT into User (username, password) VALUES (?, ?)", array($username, $password));
+      
+    }
+    
+  }
+  
+  $user = new User();
+  
+  $insertData = $user->addUser("TEST", "TEST");
+  
   
   
