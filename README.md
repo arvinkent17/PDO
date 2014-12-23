@@ -7,7 +7,9 @@ It is easy, secured and reusable to any website projects development that uses P
 
 How to use it?
 
-Just extend your class with database class
+Just extend your class with database class and use executeMySQL method
+
+$this->executeMySQL("Query Here", Array Parameter (optional), Search (optional)); 
 
 Example:
 
@@ -37,4 +39,6 @@ Example:
     
   }
   
-  Note: You can use any query either is it Create, Update, Delete, Search, Read and pass values on the method executeMySQL
+  Note: You can use any query either is it Create, Read, Update, Delete, and Search on the method executeMySQL
+  
+  
