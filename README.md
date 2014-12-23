@@ -3,11 +3,11 @@ PDO
 
 Dynamic PDO Database Class
 
-It is easy, secured and reusable to any websites projects development that uses PHP programming languages.
+It is easy, secured and reusable to any website projects development that uses PHP programming language.
 
 How to use it?
 
-Just extend the database class
+Just extend your class with database class
 
 Example:
 
@@ -22,6 +22,7 @@ Example:
         return true;
         
       }  
+      
     }
     
   }
@@ -36,4 +37,4 @@ Example:
     
   }
   
-  Note: You can use any query and pass values on the method executeMySQL
+  Note: You can use any query either is it Create, Update, Delete, Search, Read and pass values on the method executeMySQL
